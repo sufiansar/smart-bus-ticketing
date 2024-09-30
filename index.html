@@ -10,39 +10,348 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="bg-[#FFFFFF]">
     <!-- header section -->
-    <section class="container">
-        <nav>
-            <div class="navbar bg-base-100 justify-between">
+    <section class="container mx-10 lg:mx-24">
+        <!-- <nav>
+            <div class="navbar  justify-between">
                 <div class="">
-                  <a class="btn btn-ghost text-3xl font-bold text-[#030712]">P-Ticket</a>
+                    <a class="btn btn-ghost text-3xl lg:text-5xl font-bold text-[#030712]">P-Ticket</a>
                 </div>
-                <div class="navbar-center justify-between  flex">
-                  <ul class="menu menu-horizontal px-6">
-                    <li><a>Home</a></li>
-                    <li>
-                        <a>About</a>
-                    </li>
-                    <li><a>Destination</a></li>
-                  </ul>
-                  <div class="">
-                    <input type="text" placeholder="Search" class="input  w-2/3 " />
-                  </div>
+                <div class="navbar-center justify-between  ">
+                    <ul class="menu menu-horizontal px-3 text-sm md:text-xl lg:text-xl">
+                        <li><a>Home</a></li>
+                        <li>
+                            <a>About</a>
+                        </li>
+                        <li><a>Destination</a></li>
+                    </ul>
+                    <div class="">
+                        <input type="text" placeholder="Search" class="input w-3/4/2 md:w-2/3  lg:w-2/3 " />
+                    </div>
                 </div>
-                <div class=" bg-[#1DD1001A] border-2 border-[#1DD100] rounded-3xl h-auto w-auto  lg:w-32 justify-center">
-                    <h1 class="text-xl text-white">Bus</h1>
-                  <img class="p-2" src="images/bus-icon.png" alt="">
+                <div class=" bg-[#1DD1001A] border-2 border-[#1DD100] rounded-3xl h-auto w-20  lg:w-32 justify-center">
+                    <h1 class="text-xl font-bold text-[#1DD100]">Bus</h1>
+                    <img class="p-2" src="images/bus-icon.png" alt="">
                 </div>
-              </div>
-        </nav>
-        <!-- banner section -->
-         <div class="bg-[url('/images/banner.png')] h-min-screen">
-            <h1>e</h1>
+            </div>
+        </nav> -->
 
-         </div>
+        <div class="navbar ">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li><a>Item 1</a></li>
+                        <li><a>Item 2</a></li>
+                        <li><a>Item 3</a></li>
+                    </ul>
+                    <div class="md:hidden lg:hidden">
+                        <input type="text" placeholder="Search" class="input w-3/4/2 md:w-2/3  lg:w-2/3 " />
+                    </div>
+                </div>
+                <a class="btn btn-ghost text-3xl w-auto lg:text-5xl font-bold text-[#030712]">P-Ticket</a>
+            </div>
+            <div class="navbar-center justify-between mr-36 lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Item 1</a></li>
+                    <li><a>Item 2</a></li>
+                    <li><a>Item 3</a></li>
+                </ul>
+                <div class=" ">
+                    <input type="text" placeholder="Search" class="input w-3/4/2 md:w-2/3  lg:w-2/3 " />
+                </div>
+            </div>
+            <div
+                class=" bg-[#1DD1001A] border-2 border-[#1DD100] rounded-3xl h-auto w-20 ml-40  lg:w-32 justify-center">
+                <h1 class="text-xl font-bold text-[#1DD100]">Bus</h1>
+                <img class="p-2" src="images/bus-icon.png" alt="">
+            </div>
+        </div>
+
+        <!-- banner section -->
+        <div
+            class="w-[550px] lg:w-full min-h-screen bg-[url('/images/banner.png')] bg-cover bg-center bg-no-repeat mt-8 rounded-3xl justify-center">
+            <div class="flex flex-col items-center text-center mt-10  mx-8  gap-16">
+                <h1 class="mt-24 text-5xl md:text-8xl lg:text-8xl font-bold text-white">End-to-End Travel with </h1>
+                <h2 class="text-[#1DD100] text-4xl md:text-7xl lg:text-7xl font-bold">P Paribahan</h2>
+                <p class="text-white">Yes, you can run unit tests and view the results directly within the app. <br> The
+                    integrated testing features allow for a streamlined .</p>
+                <button class="bg-[#1DD100] font-bold text-black p-4 px-8 rounded-2xl">Buy Tickets</button>
+            </div>
+        </div>
+
+
+        <div class="flex justify-center space-x-16 items-center md:flex-row flex-col lg:flex-row lg:-mt-20 ">
+            <div class="inline-flex   border-b-4 rounded-2xl p-8 border-green-500   bg-white ">
+                <img src="images/people.png" alt="">
+                <div>
+                    <h1 class="text-xl">500K+</h1>
+                    <p>Registered users</p>
+                </div>
+            </div>
+            <div class="inline-flex  border-b-4 rounded-2xl p-8 border-green-500   bg-white ">
+                <img src="images/people.png" alt="">
+                <div>
+                    <h1 class="text-xl">500K+</h1>
+                    <p>Registered users</p>
+                </div>
+            </div>
+            <div class="inline-flex  border-b-4 rounded-2xl p-8 border-green-500   bg-white ">
+                <img src="images/people.png" alt="">
+                <div>
+                    <h1 class="text-xl">500K+</h1>
+                    <p>Registered users</p>
+                </div>
+            </div>
+        </div>
     </section>
-    <main></main>
+    <!-- Best offers for you -->
+    <section class="container mx-24 mt-20">
+        <h1 class="text-center text-4xl text-[#030712] font-bold">Best offers for you</h1>
+        <div>
+            <div class="flex justify-between gap-6 min-h-56 mt-12 ">
+                <div class="bg-[#FFBF0F] inline-flex w-6/12 rounded-3xl">
+                    <div class="w-full justify-center text-[#030712] my-14 ml-14">
+                        <h1 class=" font-bold text-5xl">15% OFF</h1>
+                        <h2 class="font-semibold">on your next purchase</h2>
+                        <p class="font-semibold">use by January 2024</p>
+                    </div>
+                    <div class="w-full flex justify-end  mr-6 "> <img class="" src="images/cupon-devider.png" alt="">
+                    </div>
+                    <div class="text-[#030712] my-16 mr-14">
+                        <h1 class="text-3xl font-bold">NEW15</h1>
+                        <p>Coupon Code</p>
+                    </div>
+                </div>
+                <div class="bg-[#F78C9C] inline-flex w-6/12 rounded-3xl">
+                    <div class="w-full justify-center text-[#030712] my-14 ml-14">
+                        <h1 class=" font-bold text-5xl">20% OFF</h1>
+                        <h2 class="font-semibold">on your next purchase</h2>
+                        <p class="font-semibold">use by January 2024</p>
+                    </div>
+                    <div class="w-full flex justify-end  mr-14 "> <img class="" src="images/cupon-devider.png" alt="">
+                    </div>
+                    <div class="text-[#030712] my-16 mr-14">
+                        <h1 class="text-3xl font-bold">Couple 20</h1>
+                        <p>Coupon Code</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" mt-16 flex items-center justify-center ">
+            <h1
+                class="text-xl bg-[#1DD1001A] border-2 rounded-xl p-4 text-center border-[#1DD100] font-bold text-[#1DD100]">
+                See
+                All Offers</h1>
+
+        </div>
+    </section>
+    <!-- main part start -->
+    <main class="bg-[#F7F8F8]">
+        <section class=" mt-32 border-t-4 border-[#1DD100] rounded-t-3xl">
+            <div class="flex flex-col items-center justify-center mt-32  text-[#030712]">
+                <h1 class=" text-3xl font-bold mb-6">P.H Paribahan</h1>
+                <p>Yes, you can run unit tests and view the results directly within the app.<br> The integrated testing
+                    features allow for a streamlined .</p>
+            </div>
+            <div class="container w-full max-h-[418px] mt-12 rounded-3xl bg-[#FFFFFF] flex   mx-10 lg:mx-24 ">
+                <!-- ticket part done -->
+                <div class="w-4/6">
+                    <div class="flex justify-between">
+                        <div class="flex ml-6  gap-2">
+                            <div><img class="mt-6" src="images/bus-logo.png" alt=""></div>
+                            <div>
+                                <h1 class=" text-[#030712] text-2xl mt-6 font-bold">Greenline Paribahan</h1>
+                                <p class="text-[#03071299]">Coach-009-WEB ! AC_Business</p>
+                            </div>
+                        </div>
+                        <div class="bg-[#1DD1001A] w-48 rounded-xl flex justify-center py-4  mt-10 text-center">
+                            <img src="images/seat-green.png" alt="">
+                            <h1 class="text-[#1DD100] text-xl  font-bold ">40 Seats left</h1>
+                        </div>
+                    </div>
+                    <div class="bg-[#F7F8F8] min-h-52 mt-14 ml-8 rounded-3xl ">
+                        <div class="flex justify-between p-4 border-b-2 border-dashed border-gray-500 mb-4">
+                            <h1>Route</h1>
+                            <h2> Dhaka - Sylhet</h2>
+                        </div>
+                        <div class="flex justify-between p-4 border-b-2 border-dashed border-gray-500 mb-4">
+                            <p>Departure Time</p>
+                            <p>9:00 PM</p>
+                        </div>
+                        <div class="grid grid-cols-3 gap-6 mx-6 text-center text-[#030712]  font-bold  mb-4">
+                            <div class="bg-[#0307120D] p-3 rounded-3xl">Boarding Point - Laxmipur</div>
+                            <div class="bg-[#0307120D] p-3 rounded-3xl">Dropping Point - Bogura</div>
+                            <div class="bg-[#0307120D] p-3 rounded-3xl">Est. Time - 11 Hour</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ticket price part with image setup -->
+                <div class="flex justify-end">
+                    <div class="ml-4 "><img src="images/info-devider.png" alt=""></div>
+                    <div class="my-40 mx-40 text-[#030712]">
+                        <img class="" src="images/fare.png" alt="">
+                        <h1 class="text-xl font-bold my-6">550 Taka
+                        </h1>
+                        <h1>Per Seat</h1>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Ticket selection part -->
+        <section class="container mx-24  bg-[#FFFFFF] min-h-[1056px] rounded-t-3xl mt-7 flex ">
+            <!-- part1 -->
+            <div class="w-3/5 ">
+                <div class="pt-8 ml-8">
+                    <div class="text-[#030712]  text-xl font-bold border-b-2 border-dashed border-gray-500">
+                        <h1 class="mb-4">Select Your Seat</h1>
+                    </div>
+                    <div class="flex justify-between mt-4  border-b-2 border-dashed border-gray-500 ">
+                        <div class="flex mb-4 gap-1 ">
+                            <img src="images/seat-gray.png" alt="">
+                            <h1>Available</h1>
+                        </div>
+                        <div class="flex mb-4 gap-1">
+                            <img src="images/seat-green.png" alt="">
+                            <p>Selected</p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- seat locked -->
+                <!--  -->
+                <div class=" grid grid-cols-5 ml-8 text-[#030712] ">
+                    <div class=" h-12  mt-8 flex justify-center  items-center w-32  "></div>
+                    <div class="  mt-8 flex justify-center  items-center w-32  "> </div>
+                    <div class="  mt-8 flex justify-center  items-center w-32   "> </div>
+                    <div class="  mt-8 flex justify-center  items-center w-32 ml-16"> </div>
+                    <div class=" bg-[#0307121A]  mt-8 flex justify-center  items-center w-32 ml-12  ">
+                        <img class="p-3 " src="images/wheel.png" alt="">
+                    </div>
+                    <div class=" h-12  mt-8 flex justify-center  items-center w-32  ">A</div>
+                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32  ">A1</div>
+                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32   ">A2 </div>
+                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32 ml-16">A3 </div>
+                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32 ml-12  ">A4
+                    </div>
+
+                    <div class=" h-12  mt-8 flex justify-center  items-center w-32  ">B</div>
+                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32  "> B1</div>
+                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32   "> B2</div>
+                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32 ml-16"> B3</div>
+                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32 ml-12 ">B4
+                    </div>
+
+
+                    <div class=" h-12  mt-8 flex justify-center  items-center w-32  ">C</div>
+                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32  ">C1</div>
+                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32   ">C2</div>
+                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32 ml-16">C3</div>
+                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32 ml-12  ">C4
+                    </div>
+
+
+                    <div class=" h-12  mt-8 flex justify-center  items-center w-32  ">D</div>
+                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32  ">D1</div>
+                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32   ">D2</div>
+                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32 ml-16">D3</div>
+                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32 ml-12  ">D4
+                    </div>
+
+
+                    <div class=" h-12  mt-8 flex justify-center  items-center w-32  ">E</div>
+                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32  ">E1</div>
+                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32   ">E2</div>
+                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32 ml-16">E3</div>
+                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32 ml-12  ">E4
+                    </div>
+
+
+                    <div class=" h-12  mt-8 flex justify-center  items-center w-32  ">F</div>
+                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32  ">F1</div>
+                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32   ">F2</div>
+                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32 ml-16">F3</div>
+                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32 ml-12  ">F4
+                    </div>
+
+
+                    <div class=" h-12  mt-8 flex justify-center  items-center w-32  ">G</div>
+                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32  ">G1</div>
+                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32   ">G2</div>
+                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32 ml-16">G3</div>
+                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32 ml-12  ">G4
+                    </div>
+                    <div class=" h-12  mt-8 flex justify-center  items-center w-32  ">H</div>
+                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32  ">H1 </div>
+                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32   ">H2 </div>
+                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32 ml-16">H3 </div>
+                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32 ml-12 ">H4
+                    </div>
+
+
+                    <div class=" h-12  mt-8 flex justify-center  items-center w-32  ">I</div>
+                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32  ">I1 </div>
+                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32   "> I2</div>
+                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32 ml-16">I3 </div>
+                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32 ml-12  ">I4
+                    </div>
+
+
+                    <div class=" h-12  mt-8 flex justify-center  items-center w-32  ">J</div>
+                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32  ">J1 </div>
+                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32   ">J2 </div>
+                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32 ml-16">J3 </div>
+                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32 ml-12 ">J4
+                    </div>
+
+
+                </div>
+            </div>
+            </div>
+            <!-- part2 -->
+            <div class="border-l-2 border-dashed border-gray-400 ml-12 mt-8">
+                <div class="ml-8">
+                    <div class="text-[#030712]  text-xl font-bold border-b-2 border-dashed border-gray-500">
+                        <h1 class="mb-4">Select Your Seat</h1>
+                    </div>
+                </div>
+                <div class=" bg-[#F7F8F8] w-[500px] h-[335px] ml-8 mt-8 rounded-2xl">
+                    <div
+                        class="text-[#030712] font-bold mx-8 text-xl flex justify-between  border-b-2 border-dashed border-gray-500 ">
+                        <h1 class="pt-8 mb-4">Seat <span class="bg-[#1DD100] text-white p-1 px-3 rounded-xl">2</span>
+                        </h1>
+                        <h2 class="pt-8 mb-4">Class</h2>
+                        <h2 class="pt-8 mb-4">Price</h2>
+                    </div>
+                    <div class="text-[#03071299] font-bold mx-8  flex justify-between mt-3">
+                        <p>C2</p>
+                        <p>Economoy</p>
+                        <p>550</p>
+                    </div>
+                    <div
+                        class="text-[#03071299] font-bold mx-8  flex justify-between mt-3   border-b-2 border-dashed border-gray-500">
+                        <p class="mb-4">C2</p>
+                        <p class="mb-4">Economoy</p>
+                        <p class="mb-4">550</p>
+                    </div>
+                    <div class="mx-8 pt-2 flex justify-between text-[#030712] text-xl font-bold">
+                        <p class="">Total Price</p>
+                        <p class="">BDT 1100</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer></footer>
 </body>
 
