@@ -78,7 +78,7 @@
 
         <!-- banner section -->
         <div
-            class="w-[550px] lg:w-full min-h-screen bg-[url('/images/banner.png')] bg-cover bg-center bg-no-repeat mt-8 rounded-3xl justify-center">
+            class=" w-full min-h-screen bg-[url('/images/banner.png')] bg-cover bg-center bg-no-repeat mt-8 rounded-3xl justify-center">
             <div class="flex flex-col items-center text-center mt-10  mx-8  gap-16">
                 <h1 class="mt-24 text-5xl md:text-8xl lg:text-8xl font-bold text-white">End-to-End Travel with </h1>
                 <h2 class="text-[#1DD100] text-4xl md:text-7xl lg:text-7xl font-bold">P Paribahan</h2>
@@ -348,11 +348,52 @@
                         <p class="">Total Price</p>
                         <p class="">BDT 1100</p>
                     </div>
+                    <div class=" mx-8 pt-2">
+                        <input class="border-hidden  text-center px-16  py-3  bg-[#FFFFFF]" type="text"
+                            placeholder="Have any copupon?">
+                        <button class="bg-[#1DD100] rounded-xl py-3 text-white font-bold px-8">Apply</button>
+                    </div>
+                    <div class="mx-8 text-[#030712] font-bold flex justify-between">
+                        <p class="mt-4">Grand Total</p>
+                        <p class="mt-4">BDT 1100</p>
+                    </div>
+                </div>
+                <!-- input part -->
+                <div class="flex flex-col mx-8 text-[#030712]  ">
+                    <h1 class="mt-3 text-xl font-bold ">Passenger Name*</h1>
+                    <input class="bg-white border-2 border-gray-400 rounded-md mt-3 py-3" type="text" class="grow"
+                        placeholder="Name" />
+                    <h1 class="mt-3 text-xl font-bold ">Phone Number*</h1>
+                    <input class="bg-white border-2 border-gray-400 rounded-md mt-3 py-3" type=" number" class="grow"
+                        placeholder="Number" />
+                    <h1 class="mt-3 text-xl font-bold ">Email ID</h1>
+                    <input class="bg-white border-2 border-gray-400 rounded-md mt-3 py-3" type=" text" class="grow"
+                        placeholder="Sufian@site.com" />
+                </div>
+                <div class="mx-8">
+                    <button class="btn border-none text-white px-60 bg-[#1DD100] mt-5">Next</button>
+                </div>
+
+                <!-- terms and condition -->
+                <div class="flex justify-between mx-8">
+                    <p class="mt-4 border-b-2 border-solid"> Terms and Conditions</p>
+                    <p class="mt-4 border-b-2 border-solid ">Cancellation Policy</p>
                 </div>
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer class="bg-[#030712] w-full min-h-96 mt-8">
+        <div class="flex justify-between py-32 px-36  border-b-2 border-dashed border-gray-500">
+            <div class="text-white">
+                <h1 class="text-2xl font-bold mb-2">P-Ticket</h1>
+                <p>P-Ticket is a digital platform to make your daily commuting better.</p>
+            </div>
+            <div class="">
+                <h1 class="mb-2  ">Download our app</h1>
+                <img src="images/playstore.png" alt="">
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
