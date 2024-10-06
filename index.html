@@ -12,7 +12,7 @@
 
 <body class="bg-[#FFFFFF]">
     <!-- header section -->
-    <section class="container mx-10 lg:mx-24">
+    <section class="mx-16">
         <!-- <nav>
             <div class="navbar  justify-between">
                 <div class="">
@@ -36,7 +36,6 @@
                 </div>
             </div>
         </nav> -->
-
         <div class="navbar ">
             <div class="navbar-start">
                 <div class="dropdown">
@@ -69,8 +68,7 @@
                     <input type="text" placeholder="Search" class="input w-3/4/2 md:w-2/3  lg:w-2/3 " />
                 </div>
             </div>
-            <div
-                class=" bg-[#1DD1001A] border-2 border-[#1DD100] rounded-3xl h-auto w-20 ml-40  lg:w-32 justify-center">
+            <div class=" bg-[#1DD1001A] border-2 border-[#1DD100] rounded-3xl h-auto w-40  justify-center">
                 <h1 class="text-xl font-bold text-[#1DD100]">Bus</h1>
                 <img class="p-2" src="images/bus-icon.png" alt="">
             </div>
@@ -78,13 +76,15 @@
 
         <!-- banner section -->
         <div
-            class=" w-full min-h-screen bg-[url('/images/banner.png')] bg-cover bg-center bg-no-repeat mt-8 rounded-3xl justify-center">
-            <div class="flex flex-col items-center text-center mt-10  mx-8  gap-16">
+            class=" w-auto  min-h-screen bg-[url('/images/banner.png')] bg-cover bg-center bg-no-repeat mt-8 rounded-3xl justify-center">
+            <div class="flex flex-col items-center text-center mt-10  mx-8  gap-6">
                 <h1 class="mt-24 text-5xl md:text-8xl lg:text-8xl font-bold text-white">End-to-End Travel with </h1>
                 <h2 class="text-[#1DD100] text-4xl md:text-7xl lg:text-7xl font-bold">P Paribahan</h2>
                 <p class="text-white">Yes, you can run unit tests and view the results directly within the app. <br> The
                     integrated testing features allow for a streamlined .</p>
-                <button class="bg-[#1DD100] font-bold text-black p-4 px-8 rounded-2xl">Buy Tickets</button>
+                <a href="#paribahan" onclick="mainJs()"
+                    class="bg-[#1DD100] font-bold btn border-none text-black p-4 px-8 rounded-2xl">Buy
+                    Tickets</a>
             </div>
         </div>
 
@@ -114,7 +114,7 @@
         </div>
     </section>
     <!-- Best offers for you -->
-    <section class="container mx-24 mt-20">
+    <section class=" mx-16 mt-20">
         <h1 class="text-center text-4xl text-[#030712] font-bold">Best offers for you</h1>
         <div>
             <div class="flex justify-between gap-6 min-h-56 mt-12 ">
@@ -156,13 +156,13 @@
     </section>
     <!-- main part start -->
     <main class="bg-[#F7F8F8]">
-        <section class=" mt-32 border-t-4 border-[#1DD100] rounded-t-3xl">
+        <section id="paribahan" class=" mt-32 border-t-4 border-[#1DD100] rounded-t-3xl">
             <div class="flex flex-col items-center justify-center mt-32  text-[#030712]">
                 <h1 class=" text-3xl font-bold mb-6">P.H Paribahan</h1>
                 <p>Yes, you can run unit tests and view the results directly within the app.<br> The integrated testing
                     features allow for a streamlined .</p>
             </div>
-            <div class="container w-full max-h-[418px] mt-12 rounded-3xl bg-[#FFFFFF] flex   mx-10 lg:mx-24 ">
+            <div class="mx-16 w-auto max-h-[418px] mt-12 rounded-3xl bg-[#FFFFFF] flex    ">
                 <!-- ticket part done -->
                 <div class="w-4/6">
                     <div class="flex justify-between">
@@ -175,7 +175,8 @@
                         </div>
                         <div class="bg-[#1DD1001A] w-48 rounded-xl flex justify-center py-4  mt-10 text-center">
                             <img src="images/seat-green.png" alt="">
-                            <h1 class="text-[#1DD100] text-xl  font-bold ">40 Seats left</h1>
+                            <h1 class="text-[#1DD100] text-xl  font-bold "> <span id="seatincrease">40 </span>Seats left
+                            </h1>
                         </div>
                     </div>
                     <div class="bg-[#F7F8F8] min-h-52 mt-14 ml-8 rounded-3xl ">
@@ -208,7 +209,7 @@
             </div>
         </section>
         <!-- Ticket selection part -->
-        <section class="container mx-24  bg-[#FFFFFF] min-h-[1056px] rounded-t-3xl mt-7 flex ">
+        <section class=" mx-16 bg-[#FFFFFF] min-h-[1056px] rounded-t-3xl mt-7 flex ">
             <!-- part1 -->
             <div class="w-3/5 ">
                 <div class="pt-8 ml-8">
@@ -231,87 +232,92 @@
                 <!-- seat locked -->
                 <!--  -->
                 <div class=" grid grid-cols-5 ml-8 text-[#030712] ">
-                    <div class=" h-12  mt-8 flex justify-center  items-center w-32  "></div>
-                    <div class="  mt-8 flex justify-center  items-center w-32  "> </div>
-                    <div class="  mt-8 flex justify-center  items-center w-32   "> </div>
-                    <div class="  mt-8 flex justify-center  items-center w-32 ml-16"> </div>
-                    <div class=" bg-[#0307121A]  mt-8 flex justify-center  items-center w-32 ml-12  ">
+                    <div class=" h-12  mt-8 flex justify-center  items-centerw-24   "></div>
+                    <div class="  mt-8 flex justify-center  items-center w-24   "> </div>
+                    <div class="  mt-8 flex justify-center  items-center w-24    "> </div>
+                    <div class="  mt-8 flex justify-center  items-center w-24  ml-16"> </div>
+                    <div class=" bg-[#0307121A]  mt-8 flex justify-center  items-center w-24 ml-auto  ">
                         <img class="p-3 " src="images/wheel.png" alt="">
                     </div>
-                    <div class=" h-12  mt-8 flex justify-center  items-center w-32  ">A</div>
-                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32  ">A1</div>
-                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32   ">A2 </div>
-                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32 ml-16">A3 </div>
-                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32 ml-12  ">A4
+                    <div id="A" class=" h-12  mt-8 flex justify-center  items-center w-32  ">A</div>
+                    <div id="A1" class="bg-[#F7F8F8] seat  mt-8 flex justify-center  items-center w-24  ">A1</div>
+                    <div id="A2" class="bg-[#F7F8F8] seat mt-8 flex justify-center  items-center w-24   ">A2 </div>
+                    <div id="A3" class="bg-[#F7F8F8] seat mt-8 flex justify-center  items-center w-24 ml-auto">A3 </div>
+                    <div id="A4" class="bg-[#F7F8F8] seat mt-8 flex justify-center  items-center w-24 ml-auto  ">A4
                     </div>
 
-                    <div class=" h-12  mt-8 flex justify-center  items-center w-32  ">B</div>
-                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32  "> B1</div>
-                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32   "> B2</div>
-                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32 ml-16"> B3</div>
-                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32 ml-12 ">B4
+                    <div id="B" class=" h-12  mt-8 flex justify-center  items-center w-32  ">B</div>
+                    <div id="B1" class="bg-[#F7F8F8] seat  mt-8 flex justify-center  items-center w-24  "> B1</div>
+                    <div id="B2" class="bg-[#F7F8F8] seat  mt-8 flex justify-center  items-center w-24   "> B2</div>
+                    <div id="B3" class="bg-[#F7F8F8] seat  mt-8 flex justify-center  items-center w-24 ml-auto "> B3
                     </div>
-
-
-                    <div class=" h-12  mt-8 flex justify-center  items-center w-32  ">C</div>
-                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32  ">C1</div>
-                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32   ">C2</div>
-                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32 ml-16">C3</div>
-                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32 ml-12  ">C4
+                    <div id="B4" class="bg-[#F7F8F8] seat  mt-8 flex justify-center  items-center w-24 ml-auto  ">B4
                     </div>
 
 
-                    <div class=" h-12  mt-8 flex justify-center  items-center w-32  ">D</div>
-                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32  ">D1</div>
-                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32   ">D2</div>
-                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32 ml-16">D3</div>
-                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32 ml-12  ">D4
+                    <div id="C" class=" h-12  mt-8 flex justify-center  items-center w-32  ">C</div>
+                    <div id="C1" class="bg-[#F7F8F8] seat  mt-8 flex justify-center  items-center w-24  ">C1</div>
+                    <div id="C2" class="bg-[#F7F8F8] seat  mt-8 flex justify-center  items-center w-24   ">C2</div>
+                    <div id="C3" class="bg-[#F7F8F8] seat  mt-8 flex justify-center  items-center w-24 ml-auto ">C3
+                    </div>
+                    <div id="C4" class="bg-[#F7F8F8] seat  mt-8 flex justify-center  items-center w-24 ml-auto  ">C4
                     </div>
 
 
-                    <div class=" h-12  mt-8 flex justify-center  items-center w-32  ">E</div>
-                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32  ">E1</div>
-                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32   ">E2</div>
-                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32 ml-16">E3</div>
-                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32 ml-12  ">E4
+                    <div id="D" class=" h-12  mt-8 flex justify-center  items-center w-32  ">D</div>
+                    <div id="D1" class="bg-[#F7F8F8] seat  mt-8 flex justify-center  items-center w-24  ">D1</div>
+                    <div id="D2" class="bg-[#F7F8F8] seat mt-8 flex justify-center  items-center w-24   ">D2</div>
+                    <div id="D3" class="bg-[#F7F8F8] seat mt-8 flex justify-center  items-center w-24 ml-auto ">D3</div>
+                    <div id="D4" class="bg-[#F7F8F8] seat mt-8 flex justify-center  items-center w-24 ml-auto   ">D4
                     </div>
 
 
-                    <div class=" h-12  mt-8 flex justify-center  items-center w-32  ">F</div>
-                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32  ">F1</div>
-                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32   ">F2</div>
-                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32 ml-16">F3</div>
-                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32 ml-12  ">F4
+                    <div id="E" class=" h-12  mt-8 flex justify-center  items-center w-32  ">E</div>
+                    <div id="E1" class="bg-[#F7F8F8] seat  mt-8 flex justify-center  items-center w-24  ">E1</div>
+                    <div id="E2" class="bg-[#F7F8F8] seat mt-8 flex justify-center  items-center w-24   ">E2</div>
+                    <div id="E3" class="bg-[#F7F8F8] seat mt-8 flex justify-center  items-center w-24 ml-auto ">E3</div>
+                    <div id="E4" class="bg-[#F7F8F8] seat mt-8 flex justify-center  items-center w-24 ml-auto   ">E4
                     </div>
 
 
-                    <div class=" h-12  mt-8 flex justify-center  items-center w-32  ">G</div>
-                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32  ">G1</div>
-                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32   ">G2</div>
-                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32 ml-16">G3</div>
-                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32 ml-12  ">G4
-                    </div>
-                    <div class=" h-12  mt-8 flex justify-center  items-center w-32  ">H</div>
-                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32  ">H1 </div>
-                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32   ">H2 </div>
-                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32 ml-16">H3 </div>
-                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32 ml-12 ">H4
+                    <div id="F" class=" h-12  mt-8 flex justify-center  items-center w-32  ">F</div>
+                    <div id="F1" class="bg-[#F7F8F8] seat  mt-8 flex justify-center  items-center w-24  ">F1</div>
+                    <div id="F2" class="bg-[#F7F8F8] seat mt-8 flex justify-center  items-center w-24   ">F2</div>
+                    <div id="F3" class="bg-[#F7F8F8] seat mt-8 flex justify-center  items-center w-24 ml-auto ">F3</div>
+                    <div id="F4" class="bg-[#F7F8F8] seat mt-8 flex justify-center  items-center w-24 ml-auto  ">F4
                     </div>
 
 
-                    <div class=" h-12  mt-8 flex justify-center  items-center w-32  ">I</div>
-                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32  ">I1 </div>
-                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32   "> I2</div>
-                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32 ml-16">I3 </div>
-                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32 ml-12  ">I4
+                    <div id="G" class=" h-12  mt-8 flex justify-center  items-center w-32  ">G</div>
+                    <div id="G1" class="bg-[#F7F8F8] seat  mt-8 flex justify-center  items-center w-24  ">G1</div>
+                    <div id="G2" class="bg-[#F7F8F8] seat mt-8 flex justify-center  items-center w-24   ">G2</div>
+                    <div id="G3" class="bg-[#F7F8F8] seat mt-8 flex justify-center  items-center w-24 ml-auto ">G3</div>
+                    <div id="G4" class="bg-[#F7F8F8] seat mt-8 flex justify-center  items-center w-24 ml-auto 2  ">G4
+                    </div>
+                    <div id="H" class=" h-12  mt-8 flex justify-center  items-center w-32  ">H</div>
+                    <div id="H1" class="bg-[#F7F8F8] seat  mt-8 flex justify-center  items-center w-24  ">H1 </div>
+                    <div id="H2" class="bg-[#F7F8F8] seat mt-8 flex justify-center  items-center w-24   ">H2 </div>
+                    <div id="H3" class="bg-[#F7F8F8] seat mt-8 flex justify-center  items-center w-24 ml-auto ">H3
+                    </div>
+                    <div id="H4" class="bg-[#F7F8F8] seat mt-8 flex justify-center  items-center w-24 ml-auto  ">H4
                     </div>
 
 
-                    <div class=" h-12  mt-8 flex justify-center  items-center w-32  ">J</div>
-                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32  ">J1 </div>
-                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32   ">J2 </div>
-                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32 ml-16">J3 </div>
-                    <div class="bg-[#F7F8F8]  mt-8 flex justify-center  items-center w-32 ml-12 ">J4
+                    <div id="I" class=" h-12  mt-8 flex justify-center  items-center w-32  ">I</div>
+                    <div id="I1" class="bg-[#F7F8F8] seat  mt-8 flex justify-center  items-center w-24  ">I1 </div>
+                    <div id="I2" class="bg-[#F7F8F8] seat mt-8 flex justify-center  items-center w-24   "> I2</div>
+                    <div id="I3" class="bg-[#F7F8F8] seat mt-8 flex justify-center  items-center w-24 ml-auto ">I3
+                    </div>
+                    <div id="I4" class="bg-[#F7F8F8] seat mt-8 flex justify-center  items-center w-24 ml-auto  ">I4
+                    </div>
+
+
+                    <div id="J" class=" h-12  mt-8 flex justify-center  items-center w-32  ">J</div>
+                    <div id="J1" class="bg-[#F7F8F8] seat  mt-8 flex justify-center  items-center w-24  ">J1 </div>
+                    <div id="J2" class="bg-[#F7F8F8] seat  mt-8 flex justify-center  items-center w-24   ">J2 </div>
+                    <div id="J3" class="bg-[#F7F8F8] seat  mt-8 flex justify-center  items-center w-24 ml-auto ">J3
+                    </div>
+                    <div id="J4" class="bg-[#F7F8F8] seat  mt-8 flex justify-center  items-center w-24 ml-auto  ">J4
                     </div>
 
 
@@ -328,7 +334,8 @@
                 <div class=" bg-[#F7F8F8] w-[500px] h-[335px] ml-8 mt-8 rounded-2xl">
                     <div
                         class="text-[#030712] font-bold mx-8 text-xl flex justify-between  border-b-2 border-dashed border-gray-500 ">
-                        <h1 class="pt-8 mb-4">Seat <span class="bg-[#1DD100] text-white p-1 px-3 rounded-xl">2</span>
+                        <h1 class="pt-8 mb-4">Seat <span id="pymentDone"
+                                class="bg-[#1DD100] text-white p-1 px-3 rounded-xl">0</span>
                         </h1>
                         <h2 class="pt-8 mb-4">Class</h2>
                         <h2 class="pt-8 mb-4">Price</h2>
@@ -336,22 +343,22 @@
                     <div class="text-[#03071299] font-bold mx-8  flex justify-between mt-3">
                         <p>C2</p>
                         <p>Economoy</p>
-                        <p>550</p>
+                        <p id="paymentd">0</p>
                     </div>
                     <div
                         class="text-[#03071299] font-bold mx-8  flex justify-between mt-3   border-b-2 border-dashed border-gray-500">
                         <p class="mb-4">C2</p>
                         <p class="mb-4">Economoy</p>
-                        <p class="mb-4">550</p>
+                        <p class="mb-4">0</p>
                     </div>
                     <div class="mx-8 pt-2 flex justify-between text-[#030712] text-xl font-bold">
                         <p class="">Total Price</p>
-                        <p class="">BDT 1100</p>
+                        <p id="total" class="">BDT 0</p>
                     </div>
                     <div class=" mx-8 pt-2">
-                        <input class="border-hidden  text-center px-16  py-3  bg-[#FFFFFF]" type="text"
+                        <input id="couponcode" class="border-hidden  text-center px-16  py-3  bg-[#FFFFFF]" type="text"
                             placeholder="Have any copupon?">
-                        <button class="bg-[#1DD100] rounded-xl py-3 text-white font-bold px-8">Apply</button>
+                        <button id="" class="bg-[#1DD100] rounded-xl py-3 text-white font-bold px-8">Apply</button>
                     </div>
                     <div class="mx-8 text-[#030712] font-bold flex justify-between">
                         <p class="mt-4">Grand Total</p>
@@ -382,8 +389,8 @@
             </div>
         </section>
     </main>
-    <footer class="bg-[#030712] w-full min-h-96 mt-8">
-        <div class="flex justify-between py-32 px-36  border-b-2 border-dashed border-gray-500">
+    <footer class="bg-[#030712] w-full min-h-auto  mt-8">
+        <div class="flex justify-between py-20  mx-32  border-b-2 border-dashed border-gray-500">
             <div class="text-white">
                 <h1 class="text-2xl font-bold mb-2">P-Ticket</h1>
                 <p>P-Ticket is a digital platform to make your daily commuting better.</p>
@@ -393,7 +400,21 @@
                 <img src="images/playstore.png" alt="">
             </div>
         </div>
+        <div class="mx-32 flex justify-between mt-8">
+            <div>
+                <h1>@all rights reserved, P-Ticket services limited.2024</h1>
+            </div>
+            <div class="flex justify-between ">
+                <p>Terms & condition</p>
+                <p>Return & refund policy</p>
+                <p>Privacy policy</p>
+            </div>
+        </div>
+        </div>
     </footer>
+    <script src="jsadded/buyticket.js"></script>
+    <script src="jsadded/main.js"></script>
+
 </body>
 
 </html>
